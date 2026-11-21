@@ -1,0 +1,8 @@
+{
+  "name": "VOLCA-4 Drum Machine",
+  "description": "Four-part Korg Volca style Web Audio drum machine and FM synthesizer optimized for 10-inch tablets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

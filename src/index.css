@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Chakra Petch', ui-monospace, monospace;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #060818;
+    color: #ffffff;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Eccentric TempleOS VGA dithered desktop + iPad hardware bezel */
+.temple-desktop {
+  background-color: #080b24;
+  background-image:
+    radial-gradient(rgba(85, 255, 255, 0.14) 1px, transparent 1px),
+    radial-gradient(rgba(255, 85, 255, 0.1) 1px, #080b24 1px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+.temple-chassis {
+  background-color: #0c102e;
+  border: 2px solid #55ffff;
+  box-shadow: 6px 6px 0px #000000, 0 0 0 1px #000000;
+}
+
+.temple-window {
+  background-color: #101538;
+  border: 2px solid #ffffff;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.temple-titlebar-blue {
+  background: linear-gradient(90deg, #0000aa 0%, #0044cc 65%, #aa00aa 100%);
+}
+
+.temple-titlebar-cyan {
+  background: linear-gradient(90deg, #007788 0%, #00aaaa 55%, #0000aa 100%);
+}
+
+.temple-titlebar-magenta {
+  background: linear-gradient(90deg, #880088 0%, #aa00aa 60%, #0000aa 100%);
+}
+
+.temple-led-screen {
+  background: #000000;
+  border: 2px inset #55ffff;
+}
+
+.temple-bevel-btn {
+  box-shadow: inset 1.5px 1.5px 0px rgba(255, 255, 255, 0.45), inset -1.5px -1.5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.temple-bevel-btn:active {
+  box-shadow: inset 1.5px 1.5px 0px rgba(0, 0, 0, 0.75), inset -1.5px -1.5px 0px rgba(255, 255, 255, 0.3);
+}
